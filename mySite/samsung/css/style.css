@@ -1,0 +1,371 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+body{
+    min-width:1000px;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.inner{
+    width:1000px;
+    margin:0 auto;
+    position:relative;
+}
+
+/*전체시작*/
+#wrap{}
+
+/*헤더시작*/
+#header{}
+#header .inner{
+    padding:15px 0;
+    margin-bottom:35px;
+    border-bottom:1px solid #e5e5e5;
+}
+#header h1{
+    width:204px;
+    height:50px;
+    background:url(../images/h1_samsungdisplay.gif) no-repeat;
+    background-position:left center;
+    text-indent:-9999px;
+    float:left;
+}
+#header h1 a{
+    display:block;
+}
+
+.gnb{
+    width:500px;
+    float:left;
+    margin-left:50px;
+    height:50px;
+    line-height:50px;
+}
+.gnb li{
+    width:20%;
+    float:left;
+    text-align:center;
+    font-size:14px;
+}
+.gnb li:hover .lnb{
+    display:block;
+}
+.gnb li a{
+    display:block;
+    color:#000;
+}
+.lnb{
+    width:100%;
+    position:absolute;
+    z-index:1;
+    padding-left:20px;
+    padding-top:5px;
+    display:none;
+}
+.lnb li{
+    width:auto;
+    font-size:12px;     
+}
+.lnb li:hover a{
+    color:#007cc0;
+}
+.lnb li a{
+    padding:0 5px;
+}
+
+.utill{
+    position:absolute;
+    top:50%;
+    margin-top:-8px;
+    right:0;
+}
+.utill li{
+    float:left;
+    font-size:12px;
+    margin-left:15px;
+}
+.utill li.on a{
+    font-weight:bold;
+    color:#007cc0;
+}
+.utill li a{
+    color:#000;
+}
+
+/*컨테이너시작*/
+#container{}
+
+.mainSlider{
+    height:600px;
+    overflow:hidden;
+    position:relative;
+}
+.mainSlider img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}
+
+.sliderLeftBtn{
+    position:absolute;
+    left:50%;
+    margin-left:-500px;
+    bottom:30px;
+}
+.sliderLeftBtn li{
+    width:16px;
+    height:16px;
+    float:left;
+    margin-right:5px;
+    background:url(../images/blet_visual.png) no-repeat;
+    text-indent:-9999px;
+}
+.sliderLeftBtn li.on{
+    background-position:0 -16px;
+}
+.sliderLeftBtn li a{
+    display:block;
+}
+
+.sliderRightBtn{
+    position:absolute;
+    bottom:0;
+    right:50%;
+    margin-right:-500px;
+}
+.sliderRightBtn li{
+    width:45px;
+    height:45px;
+    background:url(../images/btn_visual_cnt.png) no-repeat;
+    text-indent:-9999px;
+    float:left;
+    margin-left:1px;
+}
+.sliderRightBtn li:nth-child(2){
+    background-position:-46px 0;
+}
+.sliderRightBtn li:last-child{
+    background-position:-92px 0;
+}
+
+.sliderRightBtn li a{
+    display:block;
+    height:100%;
+}
+    
+/*mainRow1 시작*/
+.mainRow1{
+    padding:50PX 0;
+    background:#1c97fe;
+}
+.row1Box{
+    width:235px;
+    float:left;
+    margin-right:20px;
+}
+.row1Box.last{
+    margin-right:0;
+}
+.row1Box h3{
+    color:#fff;
+    font-weight:normal;
+    font-size:20px;
+}
+.row1Box a{}
+.row1Box a img{
+    width:100%;
+    height:135px;
+    margin:10px 0;
+}
+.row1Box a p{
+    font-size:11px;
+    color:#fff;
+    letter-spacing:-1px;
+}
+
+/*mainRow2 시작*/
+.mainRow2{
+    text-align:center;
+    background:url(../images/brandSite_bg.png) no-repeat;
+    background-position:50% 0;
+    padding:50px 0;
+}
+.mainRow2 h2{
+    margin-bottom:40px;
+}
+.mainRow2 h2 img{}
+
+.row2Box{
+    width:235px;
+    margin-right:20px;
+    float:left;
+}
+.row2Box.last{
+    margin-right:0;
+}
+.row2Box img{
+    width:100%;
+    display:block;
+}
+.row2Box p{
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+    margin:20px 0;
+}
+.row2Box p span{
+    font-size:13px;
+}
+.viewBtn{
+    width:130px;
+    margin:0 auto;
+    background:#263D94;
+    letter-spacing:2px;
+    border-radius:20px;
+}
+.viewBtn a{
+    color:#fff;
+    padding:10px 0;
+    display:block;
+}
+
+
+/*mainRow3 시작*/
+.mainRow3{
+    padding:50px 0;
+}
+.mainRow3 h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+.mainRow3 h2 img{}
+
+.row3Box{
+    width:320px;
+    margin-right:20px;
+    float:left;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,0.2);
+}
+.row3Box.last{
+    margin-right:0;
+}
+.row3Box img{
+    width:100%;
+    display:block;
+}
+.row3Info{
+    color:#333;
+    padding:20px;
+}
+.row3Info h3{
+    line-height:30px;
+}
+.row3Info p{
+    font-size:12px;
+    margin-bottom:15px;
+}
+.moreBtn{
+    width:100px;
+    background:#1c97fe;
+    border-radius:20px;
+    text-align:center;
+    font-size:14px;
+}
+.moreBtn a{
+    color:#fff;
+    padding:10px ;
+    display:block;
+}
+
+/*푸터시작*/
+#footer{
+    border-top:1px solid #e6e6e6;
+    padding:30px 0;
+}
+.footerLOGO{
+    height:60px;
+    float:left;
+    margin-right:50px;
+}
+.footerLOGO img{
+    margin-top:20px;
+}
+
+.footerInfo{
+    color:#ccc;
+    font-size:13px;
+    float:left;
+}
+.footerInfo ul{
+    margin-bottom:10px;
+}
+.footerInfo ul li{
+    float:left;
+    font-size:10px;
+    letter-spacing:-1px;
+}
+.footerInfo ul li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:6px;
+    background:#ccc;
+    margin:0 3px;
+}
+.footerInfo ul li:last-child:after{
+    display:none;
+}
+.footerInfo ul li a{
+    color:#ccc;
+}
+
+.footerMark{
+    position:absolute;
+    right:0;
+}
+.footerMark a{}
+.footerMark a img{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
