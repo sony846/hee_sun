@@ -1,0 +1,420 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+body{
+    font-family:'NotoSans',sans-serif;
+    font-weight:300;
+}
+ul,dl,dt,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/*헤더시작*/
+#header{
+    width:100%;
+    padding:20px 0;
+    position:relative;
+}
+
+/*로고시작*/
+#header h1{
+    width:100px;
+    height:14px;
+    background:url(../../../images/common/top_logo.png) no-repeat;
+    background-size:100px 14px;
+    margin:0 auto;
+    text-indent:-9999px;
+}
+#header h1 a{
+    height:100%;
+    display:block;
+}
+
+/*패널시작*/
+.pannel{
+    width:18px;
+    height:14px;
+    background:url(../../../images/common/pannel_Icon.png) no-repeat;
+    background-size:18px 14px;
+    text-indent:-9999px;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.pannel a{
+    height:100%;
+    display:block;
+}
+
+/*메뉴시작*/
+.background{
+    width:100%;
+    height:640px;
+    background:rgba(0,0,0,0.7);
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
+    position:fixed;
+    display:none;
+}
+.background a{
+    display:block;
+}
+.background a img{
+    width:32px;
+    height:31px;
+    margin-left:45px;
+    margin-top:11px;
+}
+.menu{
+    width:264px;
+    height:640px;
+    background:#fff;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:1;
+}
+.menuTitle{
+    font-size:24px;
+    font-weight:300;
+}
+.menuTitle li{
+    width:129px;
+    height:88px;
+    line-height:88px;
+    display:inline-block;
+    text-align:center;
+}
+.menuTitle li.menuTitleOff{
+    background:#2c2c2c;
+}
+.menuTitle li.menuTitleOff a{
+    font-weight:100;
+    color:#fff;
+}
+.menuTitle li a{
+    width:100%;
+    display:block;
+    color:#2c2c2c;
+}
+
+.menu p{
+    line-height:55px;
+    margin-left:30px;
+    width:100%;
+}
+.menu p a{
+    color:#2c2c2c;
+    display:block;
+}
+.menu p.home{
+    margin-top:20px;
+}
+
+.plus{
+    line-height:55px;
+    margin-left:30px;
+}
+.plus a{
+    color:#2c2c2c;
+    display:block;
+}
+.plus a dt{
+    display:inline-block;
+    width:125px;
+}
+.plus a dd{
+    display:inline-block;
+    padding-left:65px;
+    font-size:23px;
+}
+
+/*마이페이지 시작*/
+.myPageBackground{
+    width:100%;
+    height:640px;
+    background:rgba(0,0,0,0.7);
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
+    position:fixed;
+    display:none;
+}
+.myPageBackground a{}
+.myPageBackground a img{
+    width:32px;
+    height:31px;
+    margin-left:45px;
+    margin-top:11px;
+}
+
+.myPage{
+    width:264px;
+    height:640px;
+    background:#fff;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:1;
+}
+
+.myPageTitle{
+    font-size:24px;
+    font-weight:300;
+}
+.myPageTitle li{
+    width:129px;
+    height:88px;
+    line-height:88px;
+    display:inline-block;
+    text-align:center;
+}
+.myPageTitle li.loginTitleOff{
+    background:#2c2c2c;
+}
+.myPageTitle li.loginTitleOff a{
+    font-weight:100;
+    color:#fff;
+}
+.myPageTitle li a{
+    width:100%;
+    display:block;
+    color:#2c2c2c;
+}
+
+.login{
+    width:100%;
+    padding:0 30px;
+    padding-top:20px;
+}
+.login ul{}
+.login ul li input{
+    width:200px;
+    height:40px;
+    border:1px solid #ebebeb;
+    display:block;
+    font-size:14px;
+}
+.login ul li input.id{
+    margin-bottom:3px;
+}
+.login ul li input.pas{
+    margin-bottom:10px;
+}
+.login ul li input.loginBtn{
+    height:45px;
+    background:#2c2c2c;
+    color:#fff;
+    font-size:16px;
+}
+
+.loginBottom{
+    width:100%;
+    font-size:16px;
+}
+.loginBottom input{
+    width:18px;
+    height:18px;
+    margin-top:10px;
+    vertical-align:bottom;
+    margin-left:30px;
+}
+
+
+.loginBottomText{
+    text-align:center;
+    margin-top:20px;
+}
+.loginBottomText li{
+    display:inline-block;
+}
+.loginBottomText li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background:#666;
+    margin-right:2px;
+    margin-left:4px;
+}
+.loginBottomText li.loginBottomTextLast:after{
+    display:none;
+}
+.loginBottomText li a{
+    color:#2c2c2c;
+}
+
+
+
+
+
+
+
+/*푸터시작*/
+#footer{
+    width:100%;
+}
+
+.news{
+    height:40px;
+    font-size:16px;
+    padding:0 10px;
+    border-top:1px solid #dcdcdc;
+}
+.news a{
+    display:block;
+}
+
+.newsLeft{
+    color:#fff;
+}
+.newsLeft dt{
+    float:left;
+    width:62px;
+    height:30px;
+    line-height:28px;
+    background:#2c2c2c;
+    text-align:center;
+    margin-top:5px;
+    font-weight:300;
+}
+.newsLeft dd{
+    color:#2c2c2c;
+    float:left;
+    margin-left:5px;
+    line-height:40px;
+    font-weight:400;
+}
+.newsLeft dd.marginLeft{
+    margin-left:38px;
+}
+
+/*푸터내용시작*/
+.footerBg{
+    background:#000;
+    color:#fff;
+    text-align:center;
+}
+
+.footerTop{
+    padding:25px 0;
+}
+.footerTop h1{
+    width:164px;
+    height:24px;
+    margin:0 auto;
+    padding-bottom:20px;
+}
+.footerTop h1 img{
+    width:100%;
+    display:block;
+}
+
+/*푸터sns시작*/
+.footerSns{}
+.footerSns li{
+    width:28px;
+    height:20px;
+    display:inline-block;
+    margin-right:10px;
+}
+.footerSns li.snsLast
+.footerSns li a{}
+.footerSns li a img{
+    height:20px;
+}
+
+
+/*푸터bottom시작*/
+.footerBottom{
+    border-top:1px solid #363636;
+    padding:15px 10px;
+}
+
+.footerBottomText{
+    font-size:0;
+    margin-bottom:10px;
+}
+.footerBottomText li{
+    font-size:13px;
+    font-weight:200;
+    display:inline-block;
+}
+.footerBottomText li.font{
+    font-weight:500;
+}
+.footerBottomText li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:8px;
+    background:#fff;
+    margin:0 3px;
+}
+.footerBottomText li.none:after{
+    display:none;
+}
+.footerBottomText li a{
+    color:#fff;
+}
+
+.footerBottom p{
+    font-size:11px;
+    font-weight:200;
+}
+
+.familySite{
+    margin-bottom:5px;
+}
+.familySite li{
+    display:inline-block;
+    margin-right:10px;
+}
+.familySite li.margin{
+    margin-right:0;
+}
+.familySite li a{}
+.familySite li a img{}
+
+.footerBottom span{
+    font-size:11px;
+    font-weight:100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

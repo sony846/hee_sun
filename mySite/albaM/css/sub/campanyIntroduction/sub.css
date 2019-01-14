@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+/*컨테이너시작*/
+#container{
+    width:100%;
+}
+
+/*서브슬라이더시작*/
+.subSlider{
+    background:#ffd111;
+    height:150px;
+    padding:0 10px;
+    padding-right:2px;
+    position:relative;
+}
+.subSlider .slider{
+    width:237px;
+    height:98px;
+    float:right;
+    margin-top:53px;
+}
+
+.subSliderText{
+    position:absolute;
+    top:15px;
+    color:#45230e;
+}
+.subSliderText h1{
+    font-weight:300;
+    font-size:30px;
+}
+.subSliderText h1:after{
+    content:"";
+    display:block;
+    width:15px;
+    height:2px;
+    background:#29150a;
+    margin:15px 0;
+    margin-left:5px;
+}
+.subSliderText p{
+    font-weight:200;
+    font-size:13px;
+    color:#29150a;
+}
+
+/*mainRow1시작*/
+.mainRow1{
+    padding:0 10px;
+}
+
+.mainRow1Menu{
+    padding:50px 0;
+    text-align:center;
+}
+.mainRow1Menu li{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+}
+.mainRow1Menu li a{
+    height:100%;
+    display:block;
+    color:#29150a;
+}
+
+.row1Box1{
+    text-align:center;
+}
+.row1Box1 li{
+    font-size:14px;
+}
+.row1Box1 li.row1Title{
+    font-size:30px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.mission{
+    width:100%;
+    height:126px;
+    background:url(../../../images/sub/campanyIntroduction/mainRow1_img01.png) no-repeat;
+    background-size:100% 126px;
+    margin-top:20px;
+    margin-bottom:2px;
+    color:#fff;
+    font-size:15px;
+}
+.mission h3{
+    font-weight:400;
+    position:relative;
+    margin-left:15px;
+    padding-top:5px;
+}
+.mission h3:after{
+    content:"";
+    display:block;
+    width:3px;
+    height:3px;
+    background:#fff;
+    position:absolute;
+    left:64px;
+    top:22px;
+}
+.mission p{
+    font-size:13px;
+    font-weight:200;
+    margin-left:15px;
+    padding-top:30px;
+}
+
+.coreValues{
+    width:100%;
+    height:126px;
+    background:url(../../../images/sub/campanyIntroduction/mainRow1_img02.png) no-repeat;
+    background-size:100% 126px;
+    color:#fff;
+    font-size:15px;
+}
+.coreValues h3{
+    font-weight:400;
+    position:relative;
+    margin-left:15px;
+    padding-top:5px;
+}
+.coreValues h3:after{
+    content:"";
+    display:block;
+    width:3px;
+    height:3px;
+    background:#fff;
+    position:absolute;
+    left:115px;
+    top:22px;
+}
+
+.smallTitle{}
+.smallTitle li{
+    float:left;
+    font-size:14px;
+    font-weight:200;
+    margin-right:10px;
+    padding-top:68px;
+}
+.smallTitle li.first{
+    margin-left:15px;
+}
+.smallTitle li.marginLeft{
+    margin-left:164px;
+}
+.smallTitle li.last{
+    margin-right:15px;
+}
+
+.coreValuesWrap{}
+
+.core{
+    font-size:14px;
+    color:#2c2c2c;
+    padding:25px 0;
+}
+.core.top{
+    padding-top:60px;
+}
+.core img{
+    height:110px;
+    display:inline-block;
+}
+.core dl{
+    display:inline-block;
+    vertical-align:top;
+    margin-left:20px;
+}
+.core dl dt{
+    font-size:21px;
+    font-weight:400;
+    margin:10px 0;
+}
+.core dl dd{
+    font-weight:300;
+}
+
+/*mainRow2시작*/
+.mainRow2{
+    padding:0 10px;
+    font-size:14px;
+    font-weight:300;
+    color:#29150a;
+}
+.mainRow2 h3{
+    padding:30px 0;
+    text-align:center;
+    font-size:30px;
+    font-weight:500;
+}
+.mainRow2 iframe{
+    width:100%;
+    display:block;
+}
+.mainRow2 dl{
+    margin-bottom:20px;
+}
+.mainRow2 dt{
+    font-size:15px;
+    font-weight:500;
+    width:70px;
+    display:inline-block;
+    vertical-align:top;
+}
+.mainRow2 dd{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.address{
+    margin-top:20px;
+}
+.address dt{}
+.address dd{
+    
+}
+
+.tel{}
+.tel dt{}
+.tel dd{}
+
+.fax{}
+.fax dt{}
+.fax dd{}
+
+.subway{}
+.subway dt{}
+.subway dd{}
+
+.bus{
+    padding-bottom:20px;
+}
+.bus dt{}
+.bus dd{
+    margin-bottom:10px;
+    font-weight:300;
+}
+.bus dd span{
+    padding:0 3px;
+    margin-right:7px;
+}
+.bus dd span.busMargin{
+    margin-left:73px;
+}
+.bus dd span.en{
+    padding:0 5px;
+}
+.bus dd span.green{
+    border:1px solid #00ff00;
+    color:#00ff00;
+}
+.bus dd span.red{
+    border:1px solid #ff5f5f;
+    color:#ff5f5f;
+}
+.bus dd span.blue{
+    border:1px solid #47d4f6;
+    color:#47d4f6;
+}
+.bus dd span.deepBlue{
+    border:1px solid #62aae7;
+    color:#62aae7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

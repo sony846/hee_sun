@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/*컨테이너시작*/
+#container{
+    width:100%;
+}
+
+/*서브슬라이더시작*/
+.subSlider{
+    width:100%;
+    height:360px;
+    overflow:hidden;
+    position:relative;
+}
+.subSlider img{
+    width:100%;
+}
+
+.subSliderText{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+}
+.subSliderText h2{
+    color:#2c2c2c;
+    font-size:33px;
+    font-weight:200;
+    line-height:39px;
+}
+.subSliderText h2 span{
+    color:#ff0000;
+}
+.subSliderText p{
+    font-size:18px;
+}
+.subSliderText p a{
+    display:block;
+    color:#413c36;
+}
+.subSliderText p.subSliderTextBorder{
+    width:200px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    font-size:17px;
+    border:1px solid #2c2c2c;
+    margin-top:15px;
+}
+
+/*선택창시작*/
+.yesOrNo{
+    text-align:center;
+}
+.yesOrNo li{
+    margin-top:60px;
+    display:inline-block;
+    margin-right:40px;
+    font-size:22px;
+}
+.yesOrNo li.yesOrNoFirst{
+    font-weight:400;
+    color:#ff0000;
+}
+.yesOrNo li.yesOrNoLast{
+    margin-right:0;
+}
+
+/*mainRow1시작*/
+.mainRow1{
+    padding:60px 10px;
+}
+.mainRow1 h2{
+    font-size:35px;
+    margin-bottom:5px;
+    margin-top:25px;
+    margin-left:25px;
+    position:relative;
+}
+.mainRow1 .yesBackground{
+    width:55px;
+    height:63px;
+    position:absolute;
+}
+.mainRow1 p{
+    font-size:15px;
+    color:#2c2c2c;
+    margin-bottom:15px;
+    margin-left:25px;
+}
+.mainRow1 p.subTitle{
+    font-size:18px;
+    line-height:18px;
+    font-weight:300;
+    color:#000;
+}
+.mainRow1 p.subTitle:after{
+    content:"";
+    display:block;
+    width:25px;
+    height:2px;
+    background:#2c2c2c;
+    margin-top:60px;
+}
+.mainRow1 span{
+    padding:top:50px;
+}
+.mainRow1 span a{
+    border:1px solid #413c36;
+    color:#413c36;
+    display:block;
+    width:200px;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    margin-left:25px;
+}
+.mainRow1 span a img{
+    width:16px;
+    height:10px;
+    margin-left:5px;
+}
+
+/*mainRow2시작*/
+.mainRow2{
+    position:relative;
+}
+.mainRow2 img{
+    width:167px;
+    height:218px;
+    position:absolute;
+    top:-100px;
+    right:10px;
+}
+
+.point{
+    padding:0 8px;
+    padding-bottom:30px;
+    margin-top:120px;
+    padding-top:75px;
+    background:#f1f1f1;
+}
+.point h2{
+    font-size:21px;
+    font-weight:500;
+    margin-bottom:25px;
+}
+.point li{
+    font-size:12px;
+    margin-bottom:5px;
+}
+.point li span{
+    font-weight:300;
+    color:#ff0000;
+}
+
+/*mainRow3시작*/
+.mainRow3{
+    font-size:16px;
+    text-align:center;
+    padding:60px 10px;
+}
+.mainRow3 h2{
+    font-size:23px;
+}
+.mainRow3 p{}
+.mainRow3 p:after{
+    content:"";
+    display:block;
+    width:30px;
+    height:1px;
+    background:#2c2c2c;
+    margin:20px auto;
+    margin-bottom:35px;
+    
+}
+
+.row3MainMovie{}
+.row3MainMovie img{
+    width:100%;
+    display:block;
+}
+
+.row3SubImg{
+    float:left;
+    margin-top:4px;
+    font-size:0;
+}
+.row3SubImg li{
+    display:inline-block;
+    width:50px;
+    height:43px;
+    margin-right:2px;
+}
+.row3SubImg li a{
+    font-size:15px;
+    height:100%;
+    display:block;
+}
+.row3SubImg li a img{
+    width:50px;
+    height:43px;
+    display:block;
+}
+
+.row3SubImg li.row3SubImgLast{
+    border:1px solid #cc2a1e;
+    vertical-align:top;
+}
+.row3SubImg li.row3SubImgLast a{
+    color:#cc2a1e;
+    font-size:13px;
+    line-height:43px;
+}
+
+/*mainRow4시작*/
+.mainRow4{
+    padding:0 10px;
+}
+
+.row4Box1,.row4Box2{
+    width:100%;
+    height:184px;
+    background:url(../../../images/sub/yesNo/mainRow4_images01.png) no-repeat;
+    background-size:100% 184px;
+    margin-bottom:2px;
+    color:#fff;
+    text-align:center;
+    font-weight:100;
+    font-size:18px;
+    line-height:28px;
+}
+.row4Box1 li a,.row4Box2 li a{
+    width:190px;
+    height:30px;
+    line-height:30px;
+    margin:0 auto;
+    color:#fff;
+    border:1px solid #fff;
+    display:block;
+}
+.row4Box1 li.row4first,.row4Box2 li.row4first{
+    font-size:22px;
+    padding-top:35px;
+}
+.row4Box1 li.row4Last,.row4Box2 li.row4Last{
+    margin-top:15px;
+}
+
+.row4Box1{}
+.row4Box1 li{}
+.row4Box1 li a{}
+.row4Box1 li.row4first{}
+.row4Box1 li.row4Last{}
+
+.row4Box2{
+    background:url(../../../images/sub/yesNo/mainRow4_images02.png) no-repeat;
+    background-size:100% 184px;
+    margin-bottom:25px;
+}
+.row4Box2 li{}
+.row4Box2 li a{}
+.row4Box2 li.row4first{}
+.row4Box2 li.row4Last{}
+
+
+
+
+
+
+
+
+
