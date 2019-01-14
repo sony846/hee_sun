@@ -1,0 +1,652 @@
+<! DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+<title>김희선 포트폴리오</title>
+    
+<!--연결 링크-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--연결 링크-->
+    
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/include.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+<link rel="stylesheet" type="text/css" href="font/fonts.css">
+
+<!--스크롤효과-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--스크롤효과-->
+    
+<!--연결 링크-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--연결 링크-->
+    
+<!--슬라이더링크-->
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!--슬라이더링크-->
+    
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
+    
+<!--슬라이더링크-->
+<script type="text/javascript" src="js/jquery.typetype.js"></script>
+<!--슬라이더링크-->
+    
+    <!--사진시작-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            /*사진*/
+            $('.right').each(function(){
+                var a=$(this);
+                var img=a.find('img');
+                var src_off=img.attr('src');
+               var src_on=src_off.replace('_off','_on');
+               a.hover(function(){
+                   img.attr('src',src_on)
+               },function(){
+                   img.attr('src',src_off)
+               })
+            })
+            
+            //메인슬라이더
+            function flashTextarea(){
+              console.log('fl')
+              $('.ta').css({'outline':'1px solid rgba(255,255,0,0.7)'})
+              setTimeout(function(){
+                $('.ta').css({'outline':'1px solid rgba(255,255,0,0)'})
+              },50)
+            }
+            
+            //텍스트
+            $('.textarea1').focus().delay(0)
+            .typetype("Hello!")
+            $('.textarea2').focus().delay(1000)
+            .typetype("I'm Web designer").backspace(0)
+            $('.textarea3').focus().delay(3000)
+            .typetype("Welcome To My Portfolio").backspace(0)
+            
+            //레프트메뉴
+             $(".hamburger").click(function(){
+                $(this).toggleClass("is-active");
+                $('.menuWrap').toggleClass("menuHeight");
+              });
+            $(".menuWrap a").click(function(){
+                $('.hamburger').removeClass("is-active");
+                $('.menuWrap').removeClass("menuHeight");
+            })
+            
+            //메뉴
+            function fnMove(seq){
+                var offset = $("#about" + seq).offset();
+                $('html, body').animate({scrollTop : offset.top}, 400);
+            }
+            
+            /*mainRow1 이미지*/
+            $(window).scroll(function() {
+              var $el = $('.mainRow1Background');
+
+              if($(this).scrollTop() >= 350) $el.addClass('shown');
+            });
+            
+            /*mainRow1 텍스트 h2*/
+            $(window).scroll(function() {
+              var $el = $('.mainRow1Text h2');
+
+              if($(this).scrollTop() >= 900) $el.addClass('shown');
+                
+            });
+            
+            /*mainRow1 텍스트 p*/
+            $(window).scroll(function() {
+              var $el = $('.mainRow1Text p');
+
+              if($(this).scrollTop() >= 900) $el.addClass('shown');
+            });
+            
+            /*mainRow1 line*/
+            $(window).scroll(function() {
+              var $el = $('.mainRow1Text span.line');
+
+              if($(this).scrollTop() >= 900) $el.addClass('shown');
+            });
+            
+            /*mainRow2 이미지*/
+            $(window).scroll(function() {
+              var $el = $('.mainRow2Img');
+
+              if($(this).scrollTop() >= 1200) $el.addClass('shown');
+            });
+            
+            $(window).scroll(function() {
+              var $el = $('.mainRow2Img');
+
+              if($(this).scrollTop() >= 1400) $el.addClass('shown');
+                else $el.removeClass('shown');
+            });
+
+            
+            
+            /*mainRow2 이미지*/
+            $(window).scroll(function() {
+              var $el = $('.row2Img img');
+
+              if($(this).scrollTop() >= 1200) $el.addClass('shown');
+                else $el.removeClass('shown');
+            });
+            
+            
+            /*연결*/
+            AOS.init({
+                easing: 'ease-in-out-sine'
+            });
+            
+            /*mainRow3*/                        
+            $(".row3BoxFirst").click(function(){
+                $(".mainRow3ImgClick").css("display","block")
+            })
+            $(".closeIcon").click(function(){
+                $(".mainRow3ImgClick").css("display","none")
+            })
+            
+            $(".row3Box2").click(function(){
+                $(".mainRow3ImgClick2").css("display","block")
+            })
+            $(".closeIcon2").click(function(){
+                $(".mainRow3ImgClick2").css("display","none")
+            })
+            
+            /*mainRow4*/
+            $(".row4Box1").click(function(){
+                $(".mainRow4ImgClick3").css("display","block")
+            })
+            $(".closeIcon3").click(function(){
+                $(".mainRow4ImgClick3").css("display","none")
+            })
+            
+            $(".row4Boxpadding").click(function(){
+                $(".mainRow4ImgClick4").css("display","block")
+            })
+            $(".closeIcon4").click(function(){
+                $(".mainRow4ImgClick4").css("display","none")
+            }) 
+            
+            /*안내창*/
+            alert("크롬을 사용하시길 권장드립니다.");
+            
+            
+        });
+    </script>
+
+</head>
+<body>
+<!--전체시작-->
+<div id="wrap">
+
+<!--헤더시작-->
+<header id="header">
+        
+        <!--로고시작-->
+        <h1><a href="index.html">로고영역</a></h1>
+        <!--로고끝-->
+
+        <!--pannel시작-->
+        <div class="pannel">
+            <a>
+                
+                <div class="three col">
+                    <div class="hamburger" id="hamburger-1">
+                      <span class="line margin"></span>
+                      <span class="line"></span>
+                      <span class="line"></span>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        <!--pannel끝-->
+    
+        <!--menuWrap시작-->
+        <div class="menuWrap">
+            <div class="menuBackground">
+                
+                    <p><a href="index.html" class="button">HOME</a></p>
+                    <p><a href="sub/works_1.html" class="button">WORKS</a></p>
+                    <p><a href="#about" class="button aboutBtn">ABOUT</a></p>
+                    <p><a href="#contact" class="button contactBtn">CONTACT</a></p>
+                
+            </div>
+        </div>
+        <!--menuWrap끝-->
+        
+        
+</header>
+<!--헤더끝-->
+    
+<!--컨테이너시작-->
+<div id="container">
+    
+    <!--메인슬라이더시작-->
+    <div class="mainSlider">
+        <div spellcheck="false" class="textarea1"></div>
+        <div spellcheck="false" class="textarea2"></div>
+        <div spellcheck="false" class="textarea3"></div>
+    </div>       
+    <!--메인슬라이더끝-->
+    
+    <!--스크롤시작-->
+    <div class="mouseScroll">
+        <div class="mouse">
+            <div class="wheel">
+                스크롤영역
+            </div>
+        </div>
+    </div>
+    <!--스크롤끝-->
+    
+    <!--mainRow1시작-->
+    <div class="inner">
+        <div class="mainRow1 About-section" id="about">
+            
+            <div class="mainRow1Background">
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                이미지
+                </div>
+            </div>
+
+            <div class="mainRow1Text">
+                <h2>ABOUT ME</h2>
+                <span class="line"></span>
+                <p>안녕하세요 <span>웹 디자이너 김희선입니다</span></p>
+            </div>
+            
+        </div>
+    </div>
+    <!--mainRow1끝-->
+    
+    <!--mainRow2시작-->
+    <div class="inner">
+        <div class="mainRow2">
+
+            <div class="mainRow2Img aos-item" data-aos="fade-up">
+                이미지
+            </div>
+
+            <div class="row2Img">
+                <img src="images/main/mainRow2_img2.png" alt="그림">
+            </div>
+
+            <div class="dream aos-item" data-aos="fade-up">
+                <h3>I'm...</h3>
+                <p>
+                    저는 1999년 10월 23일에 출생하여 2017년 12월에 고등학교를 졸업하였습니다.
+                    그 후 웹 디자이너라는 새로운 꿈을 꾸게 되었고, 2018년 5월부터 서면에 있는 더좋은컴퓨터학원에서 스마트(UI/UX)웹 디자인&모바일 콘텐츠 개발과정을 수강하면서 저의 꿈을 키우는 것과 동시에 포토샵,일러스트,퍼블리싱 등 웹디자이너에게 필요한 기술들을 배우면서 하루하루 성장할 수 있었습니다. 변화하는 흐름에 맞춰 트렌디함을 가지고 있는 웹디자이너가 되겠습니다.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!--mainRow2끝-->
+    
+    <!--mainRow3시작-->
+    <div class="mainRow3 inner">
+
+        <h2>
+            Adobe<br/>
+            Photoshop
+        </h2>
+
+        <ul class="row3Box aos-item" data-aos="fade-up">
+
+            <li class="row3BoxFirst">
+                <img src="images/main/mainRow3_img1.png" alt="mainRow3Img">
+            </li>
+
+            <li class="row3Box2">
+                <img src="images/main/mainRow3_img2.png" alt="mainRow3Img">
+            </li>
+
+        </ul>
+
+        <!--이미지 클릭시1 시작-->
+        <div class="mainRow3ImgClick">
+            <div class="mainRow3ImgWrap">
+
+                <div class="img">
+                    <img src="images/main/mainRow3_img1.png" alt="click1">
+                </div> 
+
+            </div>
+
+            <div class="closeIcon">
+                <img src="images/main/close_icon.png" alt="closeIcon">
+            </div>
+
+        </div>
+        <!--이미지 클릭시1 끝-->
+
+        <!--이미지 클릭시2 시작-->
+        <div class="mainRow3ImgClick2">
+            <div class="mainRow3ImgWrap2">
+
+                <div class="img2">
+                    <img src="images/main/mainRow3_img2.png" alt="click2">
+                </div>
+
+            </div>
+
+            <div class="closeIcon2">
+                <img src="images/main/close_icon.png" alt="closeIcon">
+            </div>
+
+        </div>
+        <!--이미지 클릭시2 끝-->
+
+    </div>
+    <!--mainRow3끝-->
+    
+    <!--mainRow4시작-->
+    <div class="mainRow4 inner">
+
+        <h2>
+            Adobe<br/>
+            Illustrator
+        </h2>
+
+        <ul class="row4Box aos-item" data-aos="fade-up">
+            <li class="row4Box1">
+                <img src="images/main/mainRow4_img1.png" alt="mainRow3Img">
+            </li>
+            <li class="row4Boxpadding">
+                <img src="images/main/mainRow4_img2.png" alt="mainRow3Img">
+            </li>
+        </ul>
+
+    </div>
+    <!--mainRow4끝-->
+    
+    <!--이미지 클릭시3 시작-->
+    <div class="mainRow4ImgClick3">
+        <div class="mainRow4ImgWrap">
+
+            <div class="img3">
+                <img src="images/main/mainRow4_img1.png" alt="click2">
+            </div>
+            
+        </div>
+
+        <div class="closeIcon3">
+            <img src="images/main/close_icon.png" alt="closeIcon">
+        </div>
+
+    </div>
+    <!--이미지 클릭시3 끝-->
+    
+    <!--이미지 클릭시4 시작-->
+    <div class="mainRow4ImgClick4">
+        <div class="mainRow4ImgWrap2">
+
+            <div class="img4">
+                <img src="images/main/mainRow4_img2.png" alt="click2">
+            </div> 
+            
+        </div>
+
+        <div class="closeIcon4">
+            <img src="images/main/close_icon.png" alt="closeIcon">
+        </div>
+
+    </div>
+    <!--이미지 클릭시3 끝-->
+    
+    <!--moreBtn시작-->
+    <div class="moreBtn">
+        <a href="sub/works_1.html">MORE</a>
+    </div>
+    <!--moreBtn끝-->
+    
+    <!--mainRow5시작-->
+    <div class="mainRow5">
+        <div class="row5Bg">
+        
+            <h2>
+                Design is not just what it looks like and feels like<br/>
+                Design is how it works
+            </h2>
+            <p>Steve Jobs</p>
+            
+        </div>
+    </div>
+    <!--mainRow5끝-->
+    
+    <!--mainRow6시작-->
+    <div class="mainRow6 cf">
+        
+        <h2>Skills:</h2>
+        <div class="left aos-item" data-aos="fade-right">
+                이미지
+        </div>
+        
+        <div class="right aos-item" data-aos="fade-left">
+            <a>
+                <img src="images/main/mainRow6_off.png" alt="off" class="off">
+            </a>
+        </div>
+        
+    </div>
+    <!--mainRow6끝-->
+    
+    <!--mainRow7시작-->
+    <div class="mainRow7">
+        <div class="inner cf">
+            
+            <div class="row7Box1">
+                <div class="row7">
+                    <h2>
+                        Adobe<br/>
+                        Photoshop
+                    </h2>
+
+                    <p>
+                        레이어 마스크<br/>
+                        합성<br/>
+                        색보정<br/>
+                        웹시안제작 등
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="row7Box1">
+                <div class="row7">
+                
+                    <h2>
+                        Adobe<br/>
+                        Illustrator
+                    </h2>
+
+                    <p>
+                        펜툴<br/>
+                        패스파인더<br/>
+                        그라데이션<br/>
+                        캐릭터 제작 등
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="row7Box1">
+                <div class="row7">
+                
+                    <h2>
+                        HTML5<br/>
+                        CSS
+                    </h2>
+
+                    <p>
+                        페이지 콘텐트 구조화<br/>
+                        폼요소<br/>
+                        텍스트 스타일링<br/>
+                        반응형 디자인 등
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="row7Box1">
+                <div class="row7">
+                
+                    <h2>
+                        Javascript<br/>
+                        J-query
+                    </h2>
+
+                    <p>
+                        슬라이드 구현<br/>
+                        메뉴 구현 등
+                    </p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--mainRow7끝-->
+    
+    
+
+</div>
+<!--컨테이너끝-->
+    
+<!--footer시작-->
+<div id="footer">
+    <div class="footerBg">
+        <div class="inner">
+            
+            <!--footerLeft시작-->
+            <div class="footerLeft contact-section" id="contact">
+                
+                    <h2>Contact.</h2>
+                
+                <div class="left1">
+
+                    <span>
+                        Web designer<br/>
+                        Kim Hee Sun
+                    </span>
+                    
+                </div>
+                
+                <div class="left1">
+                    <dl class="call">
+                        <dt>tel.</dt>
+                        <dd>010 - 5502 - 9158</dd>
+                    </dl>
+                </div>
+
+                <div class="left1">
+                    <dl>
+                        <dt>email.</dt>
+                        <dd>sony846@naver.com</dd>
+                    </dl>
+                </div>
+
+            </div>
+            <!--footerLeft시작-->
+            
+            <!--footerRight시작-->
+            <div class="footerRight">
+                
+                <ul class="icon cf">
+                    <li><a href="https://www.facebook.com/profile.php?id=100013079443392" target="_balnk"><img src="images/common/icon_1.png" alt="페북아이콘"></a></li>
+                    <li><a href="https://www.instagram.com/h_eesun/?hl=ko" target="_balnk"><img src="images/common/icon_2.png" alt="인스타아이콘"></a></li>
+                </ul>
+                
+                <p>
+                    Created by Kim Hee Sun<br/>
+                    ⓒ 2018. 김희선 (Kim Hee Sun)<br/>
+                    all rights reserved.
+                </p>
+                
+            </div>
+            <!--footerRight끝-->
+            
+        </div>
+    </div>
+</div>
+<!--footer끝-->
+    
+
+    
+    
+</div>
+<!--전체끝-->    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

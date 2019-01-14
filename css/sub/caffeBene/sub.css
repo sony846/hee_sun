@@ -1,0 +1,166 @@
+@charset "utf-8";
+/*컨테이너시작*/
+#container{
+    width:100%;
+    margin-top:20px;
+    position:relative;
+}
+
+/*mainRow1시작*/
+.mainRow1{
+    position:fixed;
+}
+.mainRow1 p{
+    font-size:13px;
+    font-weight:400;
+    color:#797979;
+}
+.mainRow1 h3{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:100px;
+}
+.mainRow1 p.goBtn{
+    font-size:15px;
+    font-weight:500;
+    margin-bottom:3px;
+}
+.mainRow1 p.goBtn a{
+    color:#e61663;
+}
+.mainRow1 p.goBtn a:hover{
+    color:#ae113d;
+}
+.mainRow1 p.goBtn2{
+    font-size:15px;
+    font-weight:500;
+}
+.mainRow1 p.goBtn2 a{
+    color:#e61663;
+}
+.mainRow1 p.goBtn2 a:hover{
+    color:#ae113d; 
+}
+.mainRow1 p.goBtn:after{
+    content:"";
+    display:block;
+    width:253px;
+    height:1px;
+    background:#dcdcdc;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.mainRow1 span{
+    font-size:15px;
+    font-weight:300;
+}
+
+.mainRow1 dl{}
+.mainRow1 dl dt{
+    display:inline-block;
+    font-size:15px;
+    font-weight:500;
+    width:90px;
+}
+.mainRow1 dl dd{
+    display:inline-block;
+    font-size:15px;
+    font-weight:300;
+}
+.mainRow1 dl.row1Dl{
+    margin-top:20px;
+}
+
+
+/*사이트바로가기효과*/
+/*
+a, a > span {
+  position: relative;
+  color: inherit;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+
+.effect-7 {
+  display: inline-block;
+  overflow: hidden;
+}
+.effect-7:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #b7124f;
+  transform: translateX(-100%);
+}
+.effect-7:after {
+  content: attr(data-content);
+  left: 0;
+  top: 0;
+  width: 0;
+  margin: 12px;
+  color: #b7124f;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width .5s ease;
+    font-size:15px;
+    font-weight:500;
+    line-height:11px;
+}
+.effect-7 > span {
+  display: block;
+  margin: 2px;
+  padding:4px 10px;
+  background: #fff;
+}
+.effect-7:hover:before {
+  transform: translateX(0);
+}
+.effect-7:hover:after {
+  width: calc(100% - 24px);
+}
+*/
+
+
+
+/*mainRow2시작*/
+.mainRow2{}
+.mainRow2 .inner{
+    position:relative;
+}
+.row2Img{
+    width:840px;
+    height:2272px;
+    position:absolute;
+    top:0;
+    right:0;
+    box-shadow:4px 4px 4px rgba(0,0,0,0.3);
+    margin-bottom:50px;
+}
+.row2Img img{
+    width:100%;
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

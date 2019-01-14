@@ -1,0 +1,181 @@
+@media screen and (max-width:768px){
+    body{
+        min-width:auto;
+        width:100%;
+    }
+    .inner{
+        width:100%;
+    }
+    
+    /*전체*/
+    #wrap{
+        width:100%;
+    }
+    
+    /*헤더*/
+    #header{
+        padding:20px 20px;
+        height:45px;
+    }
+    
+    /*로고*/
+    #header h1{
+        width:32px;
+        height:44px;
+        background-size:100% 100%;
+    }
+    #header h1 a{
+        width:100%;
+        display:block;
+    }
+    
+    /*pannel*/
+    .pannel{
+        width:44px;
+        height:44px;
+    }
+    .pannel a{
+        width:100%;
+        display:block;
+    }
+    #hamburger-1{
+        width:42px;
+        height:42px;
+    }
+    
+    .hamburger span.line{
+        width:21px;
+        height:2px;
+    }
+    .hamburger .line.margin{
+        margin-top:14px;
+    }
+    .hamburger{
+        width:43px;
+        height:43px;
+        border:1px solid #000;
+        border-radius:50%;
+    }
+    
+    /*menuWrap*/
+    
+    .menuWrap{}
+    .menuBackground{}
+    .menuBackground p{}
+    .menuBackground p a{}
+    
+    
+    /*containre*/
+    #container{}
+    
+    /*mainSlider*/
+    .mainSlider{
+        margin-top:50%;
+    }
+    
+    /*mainSlider효과*/
+    .ta{
+        width:100%;
+        height:250px;
+        z-index:2;
+        -webkit-transition:all 1s, color 400ms, outline 50ms;
+        transition:all 1s, color 400ms, outline 50ms;
+        overflow:hidden;
+    }
+
+    .mainSlider div{
+        height:60px;
+        line-height:50px;
+        font-size:49px;
+        letter-spacing:5;
+    }
+
+    .mainSlider .textarea3{
+        font-size:23px;
+        position:absolute;
+        letter-spacing:5;
+    }
+    
+    /*마우스스크롤*/
+    .mouseScroll{
+        display:none;
+    }
+    
+    /*mainRow1*/
+    .mainRow1{
+        margin:380px 0;
+        display:none;
+    }
+    
+    .mainRow1Background{
+        width:100%;
+        height:750px;
+    }
+    .mainRow1Text{
+        top:150px;
+        left:50%;
+        margin-left:-154px;
+    }
+    .mainRow1Text h2{
+        font-size:50px;
+        font-weight:500;
+        letter-spacing:5;
+    }
+    .mainRow1Text p{
+        font-size:30px;
+        font-weight:500;
+        letter-spacing:4;
+    }
+
+    .mainRow2{
+        display:none;
+    }
+    .mainRow3{
+        display:none;
+    }
+    
+    
+    
+    
+    
+    /*footer*/
+    #footer{
+        display:none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,836 @@
+@charset "utf-8";
+/*컨테이너시작*/
+#container{
+    width:100%;
+}
+
+.mainSlider{
+    width:100%;
+    margin-top:90px;
+    text-align:center;
+    font-weight:100;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
+/*mainSlider효과*/
+.ta{
+    width:100%;
+    height:250px;
+    z-index:2;
+    -webkit-transition:all 1s, color 400ms, outline 50ms;
+    transition:all 1s, color 400ms, outline 50ms;
+    overflow:hidden;
+}
+
+.ta2{
+    width:100%;
+    z-index:1;
+    -webkit-transition:all 1s, color 400ms, outline 50ms;
+    transition:all 1s, color 400ms, outline 50ms;
+    overflow:hidden;
+}
+
+.mainSlider div{
+    width:100%;
+    height:120px;
+    line-height:120px;
+    color:#000;
+    text-align:center;
+    font-family: 'Amatic SC', cursive;
+    font-size:100px;
+    letter-spacing:20;
+    border:0;
+    resize:none;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    outline:none;
+    outline-style:none;
+    position: relative;
+}
+
+.mainSlider .textarea3{
+    font-size:50px;
+    position:absolute;
+    letter-spacing:8;
+}
+
+
+
+
+
+
+
+/*스크롤시작*/
+.mouseScroll{
+    width:30px;
+    height:44px;
+    margin:0 auto;
+    margin-top:18%;
+    z-index: 100;
+    -webkit-transition: opacity: .4s;
+}
+.mouse{
+    height: 40px;
+    width: 26px;
+    border: 2px solid #444;
+    border-radius: 15px;
+}
+.wheel{
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 4px;
+    margin: 8px auto 0;
+    background: #444;
+    text-indent:-9999px;
+    border-radius: 50%;
+    -webkit-animation: mouse-wheel 1.2s ease infinite;
+    -moz-animation: mouse-wheel 1.2s ease infinite;
+    animation: mouse-wheel 1.2s ease infinite;
+}
+@-webkit-keyframes mouse-wheel {
+0% { opacity:1;	-webkit-transform:translateY(0); transform:translateY(0); }
+100% { opacity:0; -webkit-transform:translateY(10px); transform:translateY(10px); }
+}
+@-moz-keyframes mouse-wheel {
+0% { opacity:1;	-moz-transform:translateY(0); transform:translateY(0); }
+100% { opacity:0; -moz-transform:translateY(10px); transform:translateY(10px); }
+}
+@keyframes mouse-wheel {
+0% { opacity:1; transform:translateY(0); }
+100% { opacity:0; transform:translateY(10px); }
+}
+
+
+/*mainRow1시작*/
+.mainRow1{
+    margin:250px 0;
+    width:100%;
+    height:582px;
+    position:relative;
+}
+.mainRow1Background{
+    position:absolute;
+    top:0;
+    right:0;
+    width:530px;
+    height:582px;
+    background:url(../images/main/mainRow1_img.png) no-repeat;
+    display:block;
+    text-indent:-9999px;
+    z-index:2;
+    box-shadow:3px 3px 10px rgba(0,0,0,0.3);
+}
+.mainRow1Text{
+    position:absolute;
+    right:645px;
+    padding-top:400px;
+    color:#2c2c2c;
+    text-align:left;
+}
+
+.mainRow1Text h2{
+    font-size:50px;
+    font-weight:400;
+}
+.mainRow1Text p{
+    font-size:18px;
+    letter-spacing:3;
+    font-weight:200;
+    color:#000;
+    line-height:20px;
+    margin-top:15px;
+}
+.mainRow1Text p span:after{
+    content:"";
+    display:block;
+    width:230px;
+    height:14px;
+    background:rgba(230,22,99,0.2);
+    position:absolute;
+    bottom:0;
+    left:103px;
+}
+
+.mainRow1Text span.line{
+    position: absolute;
+    right: -116;
+    width:450px;
+    height:1px;
+    background:#000;
+    display:block;
+    visibility: hidden;
+}
+.mainRow1Text span.line.shown{
+    visibility: visible;
+    animation: line 1s;
+}
+@-webkit-keyframes line{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 450px;
+    }
+}
+
+/*mainRow1 이미지*/
+.mainRow1Background{
+    visibility: hidden;
+}
+.mainRow1Background.shown{
+    animation: fadeInUp 2s;
+    visibility: visible;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/*mainRow1텍스트 h2*/
+.mainRow1Text h2{
+    visibility: hidden;
+    transition-delay: 1s;
+}
+.mainRow1Text h2.shown{
+    animation: fadeInUp 1s;
+    animation-delay: 1s;
+    visibility: visible;
+}
+/*mainRow1텍스트 p*/
+.mainRow1Text p{
+    visibility: hidden;
+    transition-delay: 1s;
+}
+.mainRow1Text p.shown{
+    animation: fadeInDown 1s;
+    animation-delay: 1s;
+    visibility: visible;
+    
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+
+
+
+
+
+/*mainRow2시작*/
+.mainRow2{
+    position:relative;
+    height:770px;
+}
+
+.mainRow2Img{
+    width:590px;
+    height:649px;
+    background:url(../images/main/mainRow2_img1.png) no-repeat; 
+    text-indent:-9999px;
+    box-shadow:3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.row2Img img{
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.dream{
+    position:absolute;
+    bottom:0;
+    right:70px;
+    width:330px;
+    height:295px;
+}
+.dream h3{
+    font-size:50px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+.dream p{
+    font-size:18px;
+}
+.dream p:after{
+    content:"";
+    display:block;
+    width:50px;
+    height:5px;
+    background:#e61663;
+    margin-top:12px;
+}
+
+/*
+    background:url(../images/main/text.png) no-repeat;
+    text-indent:-9999px;
+*/
+
+
+/*row2Img효과*/
+.row2Img img{
+    visibility: hidden;
+    transition-delay: 1s;
+}
+.row2Img img.shown{
+    animation: rollIn 1s;
+    animation-delay: 1s;
+    visibility: visible;
+    
+}
+
+@-webkit-keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+
+
+
+
+
+/*mainRow3시작*/
+.mainrow3{
+    padding-top:300px;
+    font-size:0;
+    position:relative;
+}
+.mainrow3 h2{
+    font-size:80px;
+    font-weight:500;
+    line-height:90px;
+    margin-left:70px;
+    margin-bottom:50px;
+}
+.row3Box li{
+    width:600px;
+    height:610px;
+    overflow:hidden;
+    display:inline-block;
+    vertical-align:top;
+    box-shadow:3px 3px 10px rgba(0,0,0,0.3);
+    cursor:pointer;
+    
+}
+.row3Box li.row3BoxFirst{
+    margin-top:170px;
+}
+.row3Box li img{
+    width:100%;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transition:all 0.5s;
+    display:block;
+}
+.row3Box li:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:all 0.5s;
+}
+
+/*mainRow3 이미지 클릭시 뜨는 화면*/
+.mainRow3ImgClick{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1000;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    display:none;
+}
+.mainRow3ImgWrap{
+    width:786px;
+    height:800px;
+    position:absolute;
+    top:50%;
+    margin-top:-400px;
+    left:50%;
+    margin-left:-393px;
+}
+
+.mainRow3ImgClick .img img{
+    width:786px;
+    height:800px;
+    display:block;
+    margin:0 auto;
+}
+.closeIcon{
+    width:46px;
+    height:46px;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.closeIcon img{
+    width:46px;
+    height:46px;
+    display: block;
+    cursor:pointer;
+}
+
+/*mainRow3 이미지 클릭시 뜨는 화면2*/
+.mainRow3ImgClick2{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1000;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    display:none;
+}
+.mainRow3ImgWrap2{
+    width:786px;
+    height:800px;
+    position:absolute;
+    top:50%;
+    margin-top:-400px;
+    left:50%;
+    margin-left:-393px;
+}
+
+.mainRow3ImgClick2 .img2 img{
+    width:786px;
+    height:800px;
+    display:block;
+    margin:0 auto;
+}
+.closeIcon2{
+    width:46px;
+    height:46px;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.closeIcon2 img{
+    width:46px;
+    height:46px;
+    cursor:pointer;
+}
+
+
+
+/*mainRow4시작*/
+.mainrow4{
+    padding-top:200px;
+    font-size:0;
+    margin:0 auto;
+}
+.mainrow4 h2{
+    text-align:right;
+    font-size:80px;
+    font-weight:500;
+    line-height:90px;
+    margin-right:70px;
+    margin-bottom:50px;
+}
+.row4Box li{
+    width:600px;
+    height:610px;
+    overflow:hidden;
+    display:inline-block;
+    vertical-align:top;
+    box-shadow:3px 3px 10px rgba(0,0,0,0.3);
+    cursor:pointer;
+}
+.row4Box li.row4Boxpadding{
+    margin-top:170px;
+}
+.row4Box li img{
+    width:100%;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transition:all 0.5s;
+    display:block;
+}
+.row4Box li:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:all 0.5s;
+}
+
+/*mainRow4 이미지 클릭시 뜨는 화면3*/
+.mainRow4ImgClick3{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1000;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    display:none;
+}
+.mainRow4ImgWrap{
+    width:786px;
+    height:800px;
+    position:absolute;
+    top:50%;
+    margin-top:-400px;
+    left:50%;
+    margin-left:-393px;
+}
+.mainRow4ImgClick3 .img3 img{
+    width:786px;
+    height:800px;
+    display:block;
+    margin:0 auto;
+}
+.closeIcon3{
+    width:46px;
+    height:46px;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.closeIcon3 img{
+    width:46px;
+    height:46px;
+    cursor:pointer;
+}
+
+/*mainRow4 이미지 클릭시 뜨는 화면4*/
+.mainRow4ImgClick4{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1000;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    display:none;
+}
+.mainRow4ImgWrap2{
+    width:786px;
+    height:800px;
+    position:absolute;
+    top:50%;
+    margin-top:-400px;
+    left:50%;
+    margin-left:-393px;
+}
+.mainRow4ImgClick4 .img4 img{
+    width:786px;
+    height:800px;
+    display:block;
+    margin:0 auto;
+}
+.closeIcon4{
+    width:46px;
+    height:46px;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.closeIcon4 img{
+    width:46px;
+    height:46px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+/*moreBtn시작*/
+.moreBtn {
+    width:300px;
+    height:80px;
+    line-height:80px;
+    font-size:28px;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(230,22,99,1), rgba(230,22,99,0.9), rgba(230,22,99,0), rgba(160,160,160,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border:3px solid #e61663;
+    margin:150px auto;
+}
+
+.moreBtn:hover{
+    border:3px solid #e61663;
+    color: $white;
+    background-position: 99% 50%;
+}
+
+.moreBtn a{
+    text-align:center;
+    width:100%;
+    display:block;
+    color:#e61663;
+    letter-spacing:3;
+}
+
+.moreBtn a:hover{
+  color: #fff;
+  color: $white;
+}
+
+/*mainRow5시작*/
+.mainRow5{
+    width:100%;
+    height:664px;
+    
+}
+.row5Bg{
+    background: url(../images/main/mainRow5_bg.png) no-repeat;
+    background-position: 50% 50%;
+    height: 664px;
+    text-align:center;
+    color:#fff;
+}
+.mainRow5 h2{
+    font-size:50px;
+    font-weight:500;
+    padding-top:210px;
+    position:relative;
+}
+.mainRow5 h2:before{
+    content:"";
+    display:block;
+    width:5px;
+    height:5px;
+    background:#fff;
+    position:absolute;
+    right:50%;
+    margin-right:-585px;
+    bottom:50%;
+    margin-bottom:-91px;
+}
+.mainRow5 h2:after{
+    content:"";
+    display:block;
+    width:5px;
+    height:5px;
+    background:#fff;
+    position:absolute;
+    right:50%;
+    margin-right:-275px;
+    top:50%;
+    margin-top:159px;
+}
+.mainRow5 p{
+    font-size:25px;
+    font-weight:400;
+    letter-spacing:1;
+    padding-top:50px;
+}
+.mainRow5 p:after{
+    content:"";
+    display:block;
+    width:140px;
+    height:2px;
+    background:#fff;
+    margin:0 auto;
+}
+
+/*mainRow6시작*/
+.mainRow6{
+    overflow-x: hidden;
+    width:100%;
+    padding-top:200px;
+    position:relative;
+}
+.mainRow6 h2{
+    position:absolute;
+    right:50%;
+    margin-right:-85px;
+    top:50%;
+    margin-top:100px;
+    font-size:100px;
+    font-weight:500;
+    color:#2c2c2c;
+    text-align:center;
+    z-index:99;
+}
+
+.left{
+    width:536px;
+    height:521px;
+    background:url(../images/main/mainRow6_img1.png) no-repeat;
+    float:left;
+    margin-top:60px;
+    text-indent:-9999px;
+}
+
+.right{
+    width:790px;
+    height:672px;
+    overflow:hidden;
+    float:right;
+}
+.right a{
+    height:100%;
+    display:block;
+}
+.right a img{
+    display:block;
+}
+
+/*mainRow7시작*/
+.mainRow7{
+    padding:175px 0;
+}
+.row7{
+    width:153px;
+    margin:0 auto;
+}
+
+.row7Box1{
+    width:300px;
+    float:left;
+    margin:0 auto;
+}
+.row7Box1 h2{
+    font-size:30px;
+    font-weight:400;
+    line-height:35px;
+    color:#e61663;
+    margin-bottom:50px;
+}
+.row7Box1 h2:before{
+    content:"";
+    display:block;
+    width:35px;
+    height:3px;
+    background:#e61663;
+    margin-bottom:32px;
+}
+.row7Box1 p{
+    font-size:15px;
+    font-weight:200;
+    line-height:20px;
+    color:#656464;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
