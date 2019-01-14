@@ -1,0 +1,596 @@
+@charset "utf-8";
+
+/*컨테이너시작*/
+#container{
+    width:100%;
+}
+
+/*bigTitle시작*/
+.bookingBigTitle{
+    border-top:1px solid #d7d7d7;
+    padding:18px 31px;
+}
+.bookingBigTitle a{
+    float:left;
+    width:10px;
+    height:20px;
+    display:block;
+}
+.bookingBigTitle a img{
+    width:10px;
+    height:20px;
+    display:block;
+}
+.bookingBigTitle h2{    
+    font-size:23px;
+    font-weight:300;
+    text-align:center;
+    line-height:23px;
+}
+
+.bookingSmallTitle{
+    font-size:0;
+}
+.bookingSmallTitle li{
+    width:50%;
+    height:43px;
+    line-height:43px;
+    display:inline-block;
+    text-align:center;
+    background:#f7f7f7;
+}
+.bookingSmallTitle li a{
+    height:100%;
+    display:block;
+    font-size:20px;
+    color:#2c2c2c;
+    font-weight:200;
+}
+.bookingSmallTitle li.on a{
+    background:#00529b;
+    color:#fff; 
+}
+
+/*mainRow1시작*/
+.mainRow1{
+    padding:0 31px;
+}
+
+.row1Box1{
+    padding-top:40px;
+    padding-bottom:5px;
+    border-bottom:1px solid #2c2c2c;
+}
+.select1{
+    border:0;
+    width:100%;
+    -webkit-appearance:none;
+    appearance:none;
+    background:url(../../images/booking/down_Arrow.png) no-repeat;
+    background-position:100% 70%;
+    background-size:15px 11px;
+    font-size:16px;
+    color:#333;
+}
+
+.row1Box2{}
+.row1Box2 ul{
+    padding-top:60px;
+    position:relative;
+}
+.row1Box2 ul li{
+    float:left;
+    width:40%;
+    padding-bottom:3px;
+    border-bottom:1px solid #2c2c2c;
+}
+.row1Box2 ul li.borderNone{
+    border:0;
+    position:absolute;
+    left:50%;
+    margin-left:-10px;
+    bottom:0;
+}
+.row1Box2 ul li.marginRight{
+    float:right;
+}
+.row1Box2 ul li a{
+    font-size:16px;
+    font-weight:300;
+    color:#333;
+    display:block;
+}
+.row1Box2 ul li a img.dubbleArrow{
+    width:20px;
+    height:11px;
+    display:block;
+}
+.row1Box2 ul li a img.gps{
+    width:12px;
+    height:21px;
+    float:right;
+}
+
+.row1Box3{}
+.row1Box3 ul{
+    padding-top:60px;
+}
+.row1Box3 ul li{
+    float:left;
+    width:40%;
+    padding-bottom:3px;
+    border-bottom:1px solid #2c2c2c;
+}
+.row1Box3 ul li.floatRight{
+    float:right;
+}
+.row1Box3 ul li a{
+    font-size:16px;
+    font-weight:300;
+    color:#333;
+    display:block;
+}
+.row1Box3 ul li a img{
+    width:20px;
+    height:20px;
+    float:right;
+}
+
+.row1Box4{
+    padding-top:60px;
+    padding-bottom:5px;
+    border-bottom:1px solid #2c2c2c;
+}
+.select2{
+    border:0;
+    width:100%;
+    -webkit-appearance:none;
+    appearance:none;
+    background:url(../../images/booking/down_Arrow.png) no-repeat;
+    background-position:100% 70%;
+    background-size:15px 11px;
+    font-size:16px;
+    color:#333;
+}
+
+/*mainRow2시작*/
+.mainRow2{
+    padding:60px 31px;
+    margin:0 auto;
+}
+
+.row2Box1{
+    width:100%;
+}
+
+.row2Box1 li{
+    display:inline-block;
+    font-size:16px;
+}
+.row2Box1Meddle{
+    padding:15px 0;
+}
+.row2Box1 li.name{
+    margin-right:15%;
+}
+.row2Box1 li.m{
+    width:33px;
+    height:30px;
+    background:#d7d7d7;
+    font-size:25px;
+    text-align:center;
+    line-height:25px;
+}
+.row2Box1 li.number{
+    margin:0 23%;
+}
+.row2Box1 li.p{
+    width:33px;
+    height:30px;
+    background:#d7d7d7;
+    text-align:center;
+    line-height:28px;
+}
+
+.row2Box1 li a{
+    height:100%;
+    display:block;
+}
+
+
+/*mainRow3시작*/
+.mainRow3{
+    padding:0 31px;
+    padding-bottom:50px;
+    font-size:0;
+    text-align:center;
+}
+
+.row3Box1{
+    width:46%;
+    height:41px;
+    line-height:41px;
+    border:1px solid #ebebeb;
+    display:inline-block;
+}
+.row3Box1.row3Margin{
+    margin-right:5%;
+}
+.row3Box1 a{
+    height:100%;
+    display:block;
+    font-size:15px;
+    color:#2c2c2c;
+}
+.row3Box1 a li{
+    display:inline-block;
+    vertical-align:middle;
+}
+.row3Box1 a li img{
+    width:15px;
+    height:21px;
+}
+.row3Box1 a li img.iconAbsolute{
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+.row3Box1 a li.absolute img{
+    width:18px;
+    height:20px;
+}
+
+.row3Margin{
+    position:relative;
+}
+.row3Margin .absolute1{
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.relative{
+    position:relative;
+}
+.relative .absolute2{
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+
+/*mainRow4시작*/
+.mainRow4{
+    padding-bottom:50px;
+}
+.mainRow4 a{
+    color:#fff;
+    font-size:18px;
+    font-weight:200;
+    display:block;
+    text-align:center;
+    line-height:38px;
+}
+.mainRow4 a span{
+    width:160px;
+    height:38px;
+    background:#0057ad;
+    margin:0 auto;
+    display:block;
+}
+
+/*mainRow5시작*/
+.mainRow5{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    display:none;
+    
+}
+.bgRelative{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.whiteBg{
+    position:absolute;
+    top:50%;
+    margin-top:-190px;
+    left:50%;
+    margin-left:-168px;
+    width:336px;
+    height:390px;
+    background:#fff;
+    padding:15px 15px;
+    box-sizing: border-box;
+    
+}
+.row5Box1{
+    text-align:center;
+}
+.closeBtn a{
+    position:absolute;
+    top:-10px;
+    right:-40px;
+    width:25px;
+    height:24px;
+    display:block;
+}
+.closeBtn a img{
+    width:25px;
+    height:24px;
+    display:block;
+}
+.row5Box1 h2{
+    padding-top:25px;
+    font-size:35px;
+    font-weight:400;
+    color:#00529c;
+    margin-bottom:30px;
+}
+
+/*체크박스*/
+.radio {
+    position: relative;
+    float:left;
+    margin-bottom:20px;
+}
+
+.radio input[type="radio"] {  /* 실제 체크박스는 화면에서 숨김 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0
+}
+.radio input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.radio input[type="radio"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;  /* 체크박스의 너비를 지정 */
+  height: 21px;  /* 체크박스의 높이를 지정 */
+  line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 8px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #fafafa;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.radio input[type="radio"] + label:active:before,
+.radio input[type="radio"]:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.radio input[type="radio"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';  /* 체크표시 유니코드 사용 */
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #e9ecee;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.radio.etrans input[type="radio"] + label {
+    padding-left:35px;
+    font-size:15px;
+    font-weight:200;
+    color:#2c2c2c;
+}
+.radio.etrans input[type="radio"] + label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  opacity: .6;
+  box-shadow: none;
+  border-color: #00529c;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.radio.etrans input[type="radio"]:checked + label:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity:1; 
+  background: transparent;
+  border-color:transparent #00529c #00529c transparent;
+  border-top-color:transparent;
+  border-left-color:transparent;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+
+.lastCheckBox{
+    float:right;
+}
+
+.row5Box2{}
+
+.loginTop{
+    position:relative;
+}
+.loginTop li{}
+.loginTop li input{
+    width:190px;
+    height:50px;
+    border:0;
+    border:1px solid #999;
+}
+.loginTop li input.row5Box2Id{
+    margin-bottom:4px;
+}
+.loginTop li input.row5Box2Pass{}
+.loginTop li input.loginbtn{
+    position:absolute;
+    top:0;
+    right:0;
+    width:112px;
+    height:104px;
+    background:#00529c;
+    color:#fff;
+    font-size:18px;
+    font-weight:200;
+    border:0;
+}
+.loginTop label{}
+
+.checkbox {
+    position: relative;
+    float:left;
+    margin-bottom:20px;
+    margin-top:5px;
+    padding-top:5px;
+    width:100%;
+}
+
+.checkbox input[type="checkbox"] {  /* 실제 체크박스는 화면에서 숨김 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0
+}
+.checkbox input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.checkbox input[type="checkbox"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 13px;  /* 체크박스의 너비를 지정 */
+  height: 13px;  /* 체크박스의 높이를 지정 */
+  line-height:13px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 8px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #fafafa;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.checkbox input[type="checkbox"] + label:active:before,
+.checkbox input[type="checkbox"]:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';  /* 체크표시 유니코드 사용 */
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #e9ecee;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.checkbox.etrans input[type="checkbox"] + label {
+    padding-left:20px;
+    line-height:15px;
+    font-size:15px;
+    font-weight:200;
+    margin-left:1px;
+    color:#2c2c2c;
+
+}
+.checkbox.etrans input[type="checkbox"] + label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  opacity: .6;
+  box-shadow: none;
+  border-color: #00529c;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.checkbox.etrans input[type="checkbox"]:checked + label:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity:1; 
+  background: transparent;
+  border-color:transparent #00529c #00529c transparent;
+  border-top-color:transparent;
+  border-left-color:transparent;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.row5Box3{
+    font-size:0;
+    text-align:center;
+    margin-top:80px;
+}
+.row5Box3 li{
+    display:inline-block;
+}
+.row5Box3 li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background:#999;
+    margin:0 5px;
+}
+.row5Box3 li.row5Box3Last:after{
+    display:none;
+}
+.row5Box3 li a{
+    font-size:16px;
+    font-weight:200;
+    color:#2c2c2c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

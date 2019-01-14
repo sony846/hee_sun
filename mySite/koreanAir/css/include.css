@@ -1,0 +1,429 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+body{
+    font-family:'NotoSans',sans-serif;
+    font-weight:300;
+}
+ul,dl,dt,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/*헤더시작*/
+#header{
+    padding:18px 31px;
+    position:relative;
+}
+
+#header h1{
+    margin:0 auto;
+    width:130px;
+    height:20px;
+    background:url(../images/common/logo_top.png) no-repeat;
+    background-size:130px 20px;
+    text-indent:-9999px;
+}
+#header h1 a{
+    height:100%;
+    display:block;
+}
+
+.menuIcon{
+    width:18px;
+    height:14px;
+    background:url(../images/common/menu_icon.png) no-repeat;
+    background-size:18px 14px;
+    text-indent:-9999px;
+    position:absolute;
+    top:21px;
+    left:31px;
+}
+.menuIcon a{
+    display:block;
+}
+
+.myPageIcon{
+    width:17px;
+    height:19px;
+    background:url(../images/common/myPage_icon.png) no-repeat;
+    background-size:17px 19px;
+    text-indent:-9999px;
+    position:absolute;
+    top:18px;
+    right:31px;
+}
+.myPageIcon a{
+    display:block;
+}
+
+/*메뉴시작*/
+.menuBackground{
+    width:0;
+    height:640px;
+    overflow-x: hidden;
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:1;
+}
+.closeBtn{
+    position:absolute;
+    top:20px;
+    right:50px;
+}
+.closeBtn a{
+    display:block;
+}
+.closeBtn a img{
+    width:32px;
+    height:31px;
+    display:block;
+}
+.menu{
+    width:0;
+    overflow-x:hidden;
+    height:640px;
+    background:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:5;
+    transition:all 0.5s;
+}
+.menuTitle{
+    width:264px;
+    font-size:24px;
+    font-weight:300;
+    font-size:0;
+}
+.menuTitle li{
+    width:132px;
+    height:88px;
+    line-height:88px;
+    display:inline-block;
+    text-align:center;
+    font-size:22px;
+}
+.menuTitle li.menuTitleOff{
+    background:#00529b;
+}
+.menuTitle li.menuTitleOff a{
+    font-weight:100;
+    color:#fff;
+}
+.menuTitle li a{
+    width:100%;
+    display:block;
+    color:#00529b;
+}
+
+.menu p{
+    width:264px;
+    line-height:55px;
+    padding-left:30px;
+    box-sizing:border-box;
+}
+.menu p a{
+    color:#2c2c2c;
+    display:block;
+    font-weight:200;
+}
+.menu p.home{
+    margin-top:20px;
+    padding-left:30px;
+}
+
+.plus{
+    line-height:55px;
+    padding-left:30px;
+    font-weight:200;
+}
+.plus a{
+    color:#2c2c2c;
+    display:block;
+}
+.plus a dt{
+    display:inline-block;
+    width:185px;
+}
+.plus a dd{
+    display:inline-block;
+    font-size:23px;
+}
+.menuInfo{
+    width:264px;
+    height:470px;
+    overflow:auto;
+}
+
+/*마이페이지 시작*/
+.myPageBackground a{}
+.myPageBackground a img{
+    width:32px;
+    height:31px;
+    margin-left:280px;
+    margin-top:11px;
+}
+
+.myPage{
+    width:0;
+    height:640px;
+    background:#fff;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    overflow-x: hidden;
+    transition:all 0.5s;
+    display:none;
+}
+
+.myPageTitle{
+    width:264px;
+    font-size:24px;
+    font-weight:300;
+}
+.myPageTitle li{
+    width:129px;
+    height:88px;
+    line-height:88px;
+    display:inline-block;
+    text-align:center;
+}
+.myPageTitle li.loginTitleOff{
+    background:#00529b;
+}
+.myPageTitle li.loginTitleOff a{
+    font-weight:100;
+    color:#fff;
+}
+.myPageTitle li a{
+    width:100%;
+    display:block;
+    color:#00529b;
+}
+
+.login{
+    width:200px;
+    padding-left:30px;
+    padding-top:20px;
+}
+.login ul{
+    width:200px;
+}
+.login ul li input{
+    width:200px;
+    height:40px;
+    border:1px solid #ebebeb;
+    display:block;
+    font-size:14px;
+}
+.login ul li input.id{
+    margin-bottom:3px;
+}
+.login ul li input.pas{
+    margin-bottom:10px;
+}
+.login ul li input.loginBtn{
+    height:45px;
+    background:#00529b;
+    color:#fff;
+    font-size:16px;
+}
+
+.loginBottom{
+    width:264px;
+    font-size:13px;
+}
+.loginBottom input{
+    width:18px;
+    height:18px;
+    margin-top:10px;
+    vertical-align:bottom;
+    margin-left:30px;
+}
+
+
+.loginBottomText{
+    text-align:center;
+    margin-top:20px;
+}
+.loginBottomText li{
+    display:inline-block;
+}
+.loginBottomText li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background:#666;
+    margin-right:2px;
+    margin-left:4px;
+}
+.loginBottomText li.loginBottomTextLast:after{
+    display:none;
+}
+.loginBottomText li a{
+    color:#2c2c2c;
+}
+
+
+
+
+
+
+
+
+
+
+/*푸터시작*/
+#footer{
+    background:#d2d2d2;
+    padding:0 10px;
+}
+
+.footerTop{
+    text-align:center;
+    padding:20px 0;
+}
+
+.lang{
+    font-size:0;
+}
+.lang li{
+    display:inline-block;
+}
+.lang li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background:#666;
+    margin:0 5px;
+}
+.lang li.last:after{
+    display:none;
+}
+.lang li a{
+    color:#000;
+    font-size:15px;
+    font-weight:200;
+}
+
+.footerTopText{
+    margin-bottom:10px;
+}
+.footerTopText li{
+    display:inline-block;
+}
+.footerTopText li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background:#666;
+    margin:0 5px;
+}
+.footerTopText li.last:after{
+    display:none;
+}
+.footerTopText li a{
+    color:#000;
+    font-size:15px;
+    font-weight:300;
+}
+.footerTopText li.font a{
+    font-weight:500;
+}
+
+.footerTop p{
+    font-size:13px;
+    font-weight:300;
+}
+.footerTop span{
+    font-size:13px;
+    font-weight:300;
+}
+
+/*footerBottom시작*/
+.footerBottom{
+    border-top:1px solid #dcdcdc;
+    padding:20px 0;
+}
+
+.snsIcon{
+    font-size:0;
+    width:275px;
+    margin:0 auto;
+}
+.snsIcon li{
+    width:35px;
+    height:36px;
+    display:inline-block;
+    margin-right:25px;
+}
+.snsIcon li.snsLast{
+    margin-right:0;
+}
+.snsIcon li a{
+    width:100%; 
+}
+.snsIcon li a img{
+    width:35px;
+    height:36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
