@@ -1,0 +1,327 @@
+<! DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>A L B A</title>
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/include.css">
+<link rel="stylesheet" type="text/css" href="css/sub.css">
+<link rel="stylesheet" type="text/css" href="font/fonts.css">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $("#header").load("include/header.html");
+           $("#footer").load("include/footer.html");
+           
+           $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay:true,
+            autoplaySpeed:2000,
+            prevArrow:'<img class="prevBtn" src="images/main/leftBtn_Icon.png">',
+            nextArrow:'<img class="nextBtn" src="images/main/rightBtn_Icon.png">'
+          });
+           
+       $('.variable-width').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          centerMode: true,
+          variableWidth: true,
+          prevArrow:'<img class="left">',
+          nextArrow:'<img class="right">'
+        });
+           
+        $('.single-item').slick({
+            dots: true,
+            arrows:false,
+        });
+
+       });
+    </script>
+    
+</head>
+    
+<body>
+<!--전체시작-->
+<div class="wrap">
+    
+    <!--헤더시작-->
+    <header id="header">
+        
+    </header>
+    <!--헤더끝-->
+    
+    <!--컨테이너시작-->
+    <div id="container">
+        
+        <section class="regular slider">
+            
+            <div class="mainSlider">
+                <img src="images/main/mainSlider.png" alt="메인슬라이더">
+
+                <div class="sliderTextTop">
+                    <p>
+                        잘몰라서<br/>
+                        못받았던<span> 주휴수당</span><br/>
+                        알아보고<br/>
+                        당당하게 받자!
+                    </p>
+                </div>
+
+                <ul class="sliderTextBottom">
+                    <li class="first">주휴수당 습격사건</li>
+                    <li><a href="#">자세히보기</a></li>
+                </ul>
+
+            </div>
+            <div class="mainSlider">
+                <a href="#">
+                    <img src="images/main/mainSlider02.jpg" alt="메인슬라이더2">
+                </a>
+            </div>
+            
+        </section>
+        
+        <!--mainRow1시작-->
+        <div class="mainRow1">
+            
+            <img src="images/main/mainRow1_Text01.png" alt="mainRow1 텍스트1" class="row1Images">
+            
+            <div class="row1Box">
+                <a href="#">
+                
+                <h2>Who's next?</h2>
+                <p>
+                    다음 주인공은 바로 너!<br/>
+                    응원과 위로가 필요한 알바에게<br/>
+                    서프라이즈한 하루를 선물해드려요
+                </p>
+                    
+                </a>
+            </div>
+            
+            <img src="images/main/mainRow1_Text02.png" alt="mainRow1 텍스트1" class="last">
+            
+        </div>
+        <!--mainRow1끝-->
+        
+        <!--mainRow2시작-->
+        <div class="mainRow2">
+            
+            <div class="row2Box">
+                <a href="#">
+                    
+                    <h2>주휴수당</h2>
+                    <p>
+                        잘 몰라서 못받았던<br/>
+                        주휴수당을 알아보자!
+                    </p>
+                    <span>계산하기</span>
+                    
+                </a>                
+            </div>
+            
+            <img src="images/main/mainRow2_Text.png" alt="mainRow2 텍스트">
+            
+        </div>
+        <!--mainRow2끝-->
+        
+        <!--mainRow3시작-->
+        <div class="mainRow3 cf">
+            
+            <a href="#">
+                <img src="images/main/row3_images.png" alt="mainRow3이미지" class="mainRow3Images">
+            </a>
+            
+        </div>
+        <!--mainRow3끝-->
+        
+        <!--mainRow4시작-->
+        <div class="mainRow4">
+            
+            <div class="row4TopBox">
+                
+                <h2>안심 귀가 프로젝트</h2>
+                <p>
+                    #알바하느라 수고했어,오늘도<br/>
+                    #콜버스
+                </p>
+                
+            </div>
+            
+            <div class="row4BottomBox cf">
+                
+                <img src="images/main/images_44.png" alt="mainRow4이미지">
+                
+                <ul class="row4RightBox">
+                    <li class="h2">심야 알바 버스</li>
+                    <li class="margin">
+                        늦은 밤, 고된 알바로 지친 알바님들을 위해 준비한<br/>
+                        <span> 안심 귀가 프로젝트!</span> 콜버스는 밤 11시부터 새벽 4시<br/>
+                        까지 이용이 가능합니다. 일요일 및 공휴일에는<br/>
+                        운행을하지 않습니다.
+                    </li>
+                    <li><a href="#">심야버스 신청</a></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <!--mainRow4끝-->
+        
+        <!--mainRow5시작-->
+        <div class="mainRow5">
+            
+            <div class="row5Text cf">
+                <h3>
+                    Instagram<img src="images/main/row5_instaIcon.png" alt="row5 인스타그램 아이콘">
+                    <p><a href="#">+</a></p>
+                </h3>
+                
+            </div>
+            
+            <section class="variable-width">
+                
+                <div class="row5Box">
+                    <a href="#"><img src="images/main/insta_01.png" alt="인스타이미지1"></a>
+                </div>
+
+                <div class="row5Box">
+                    <a href="#"><img src="images/main/insta_02.png" alt="인스타이미지2"></a>
+                </div>
+
+                <div class="row5Box">
+                    <a href="#"><img src="images/main/insta_03.png" alt="인스타이미지3"></a>
+                </div>
+
+                <div class="row5Box">
+                    <a href="#"><img src="images/main/insta_04.png" alt="인스타이미지4"></a>
+                </div>
+
+                <div class="row5Box">
+                    <a href="#"><img src="images/main/insta_05.png" alt="인스타이미지5"></a>
+                </div>
+
+                <div class="row5Box">
+                    <a href="#"><img src="images/main/insta_06.png" alt="인스타이미지6"></a>
+                </div>
+
+                <div class="row5Box">
+                    <a href="#"><img src="images/main/insta_07.png" alt="인스타이미지7"></a>
+                </div>
+                
+            </section>
+            
+        </div>
+        <!--mainRow5끝-->
+        
+        <!--mainRow6시작-->
+        <div class="mainRow6">
+            
+            <section class="single-item">
+                
+                <div class="row6Box1">
+
+                    <img src="images/main/row6_images.png" alt="row6이미지1">
+
+                    <div class="row6MoreBtn1">
+                        <a href="#">More</a>
+                    </div>
+
+                </div>
+
+                <div class="row6Box2">
+
+                    <img src="images/main/row6_images2.png" alt="row6이미지2">
+
+                    <div class="row6MoreBtn2">
+                        <a href="#">More</a>
+                    </div>
+
+                </div>
+                
+            </section>
+            
+        </div>
+        <!--mainRow6끝-->
+        
+    </div>
+    <!--컨테이너끝-->
+    
+<!--푸터시작-->
+<div id="footer">
+    
+</div>
+<!--푸터끝-->
+    
+</div>
+<!--전체끝-->    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
